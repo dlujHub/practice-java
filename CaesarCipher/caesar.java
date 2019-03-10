@@ -25,13 +25,13 @@ public class caesar {
         String forDecrypt = encrypt(message, 23);
         System.out.println(forDecrypt);
 
-        System.out.println("\n" + "Decript \n  " + decrypt(forDecrypt));
+        System.out.println("\n" + "Decrypt \n  " + decrypt(forDecrypt));
 
         System.out.println("\n" + "Encrypt double key");
         String forDoubleKey = "Just a test string with lots of eeeeeeeeeeeeeeeees";
         System.out.println(encrypt(forDoubleKey, 2, 23));
 
-        System.out.println("\n" + "Decript Two keys \n  " + decryptTwoKeys(forDoubleKey));
+        System.out.println("\n" + "Decrypt Two keys \n  " + decryptTwoKeys(forDoubleKey));
 
 
          }
@@ -44,6 +44,7 @@ public class caesar {
         return 26 - dkey;
 
     }
+
     private static String decryptTwoKeys(String encrypted) {
         String first = halfOfString(encrypted, 0);
         String second = halfOfString(encrypted, 1);
