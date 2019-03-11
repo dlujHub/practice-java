@@ -6,7 +6,7 @@ public class CaesarCipher {
     CaesarCipher(int key) {
        alphabetUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
        alphabetLower = "abcdefghijklmnopqrstuvwxyz";
-         salphabetUpper = alphabetUpper.substring(key) + alphabetUpper.substring(0,key);
+       salphabetUpper = alphabetUpper.substring(key) + alphabetUpper.substring(0,key);
        salphabetLower = alphabetLower.substring(key) + alphabetLower.substring(0,key);
 
     }
