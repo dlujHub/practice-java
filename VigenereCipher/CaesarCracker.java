@@ -1,5 +1,7 @@
 package VigenereCipher;
 
+import java.util.Arrays;
+
 public class CaesarCracker {
     char mostCommon;
     
@@ -50,5 +52,5 @@ public class CaesarCracker {
         return cc.decrypt(encrypted);
         
     }
-   
+
 }
